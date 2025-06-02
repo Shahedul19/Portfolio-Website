@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Shahedul Islam Sarker | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  };
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.5.3/dist/forms.min.css">
+<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <button onclick="document.documentElement.classList.toggle('dark')" class="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded hover:shadow flex items-center space-x-2">
+  <i class="fas fa-sun hidden dark:inline"></i>
+  <i class="fas fa-moon dark:hidden"></i>
+  <span>Toggle Theme</span>
+</button>
+      <div class="text-xl font-bold">Md Shahedul Islam Sarker</div>
+      <ul class="flex space-x-6 text-sm font-medium">
+  <li><a href="#about" class="hover:text-blue-500 scroll-link">About</a></li>
+  <li><a href="#projects" class="hover:text-blue-500 scroll-link">Projects</a></li>
+  <li><a href="#skills" class="hover:text-blue-500 scroll-link">Skills</a></li>
+  <li><a href="#contact" class="hover:text-blue-500 scroll-link">Contact</a></li>
+</ul>
+    </div>
+  </nav>
+
+  <main class="pt-24 px-4 max-w-4xl mx-auto">
+    <!-- Hero Section -->
+    <section id="hero" data-aos="fade-up" class="text-center py-20">
+      <h1 class="text-4xl font-bold mb-4">Hi, I'm Md Shahedul Islam Sarker</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">A passionate Front-End Developer and ML enthusiast</p>
+      
+      <a href="#projects" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition animate-bounce">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <h2 class="text-2xl font-bold mb-6">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div class="w-full md:w-1/3">
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img src="./assets/1669195382372.jpg" alt="Profile Photo" class="w-full h-auto object-cover transition duration-500" />
+          </div>
+        </div>
+        <div class="w-full md:w-2/3">
+          <p class="text-gray-700 dark:text-gray-300 leading-loose">
+            I'm Md Shahedul Islam Sarker, a Computer Science graduate from BRAC University with a strong focus on front-end development and machine learning. I enjoy transforming complex problems into intuitive and interactive web applications. My interests lie in creating responsive, scalable, and accessible web experiences, and I'm continuously exploring new technologies to improve my skills.
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 leading-loose mt-4">
+            I’ve worked on various academic and personal projects involving data visualization, classification models, and portfolio interfaces. My aim is to combine technical knowledge with creativity to build user-friendly web applications that solve real-world problems.
+          </p>
+          <a href="./assets/resume.pdf" download class="$1 animate-pulse">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+  <h2 class="text-2xl font-bold mb-6">Projects</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+      <h3 class="font-semibold text-lg">Personal Portfolio Website</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">A fully responsive personal website built from scratch using HTML, Tailwind CSS, and JavaScript. It showcases my work, resume, and contact information in a clean, modern layout.</p>
+      <a href="https://github.com/Shahedul19" class="text-blue-500 text-sm" target="_blank">View on GitHub</a>
+    </div>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+      <h3 class="font-semibold text-lg">Employee Performance Prediction</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">A machine learning project focused on predicting employee performance using classification models and data preprocessing techniques like feature engineering and scaling.</p>
+      <a href="https://github.com/Shahedul19" class="text-blue-500 text-sm" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+        
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <h2 class="text-2xl font-bold mb-6">Skills</h2>
+<ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-700 dark:text-gray-300">
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="hover:underline">HTML</a></li>
+  <li><a href="https://tailwindcss.com/" target="_blank" class="hover:underline">CSS / Tailwind</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="hover:underline">JavaScript</a></li>
+  <li><a href="https://react.dev/" target="_blank" class="hover:underline">React.js</a></li>
+  <li><a href="https://www.python.org/" target="_blank" class="hover:underline">Python</a></li>
+  <li><a href="https://scikit-learn.org/" target="_blank" class="hover:underline">Machine Learning</a></li>
+</ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+  <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+  <p class="text-gray-600 dark:text-gray-300 mb-4">Feel free to reach out via email or submit the form below:</p>
+  <form action="https://formspree.io/f/xnnvqnqz" method="POST" class="max-w-xl mx-auto bg-white dark:bg-gray-800 p-6 rounded shadow" onsubmit="handleSubmit(event)">
+  <div class="mb-4">
+    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md bg-white text-gray-900 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
+  </div>
+  <div class="mb-4">
+    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md bg-white text-gray-900 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
+  </div>
+  <div class="mb-4">
+    <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded-md bg-white text-gray-900 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+  </div>
+  <button type="submit" id="submitBtn" class="$1 animate-pulse">Send Message</button>
+  <p id="formResponse" class="mt-4 text-sm text-green-500 hidden">Thanks! Your message has been sent.</p>
+</form>
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const responseMsg = document.getElementById('formResponse');
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Sending...';
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        responseMsg.classList.remove('hidden');
+        form.reset();
+      } else {
+        responseMsg.innerText = 'Oops! Something went wrong.';
+        responseMsg.classList.remove('hidden');
+      }
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Send Message';
+    }).catch(() => {
+      responseMsg.innerText = 'Error sending message.';
+      responseMsg.classList.remove('hidden');
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Send Message';
+    });
+  }
+</script>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800 border-t mt-20 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    <div class="mb-2">
+      <a href="https://github.com/Shahedul19" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-black text-lg"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/shahed-ul-islam-84294915a/" target="_blank" class="mx-2 text-blue-600 hover:text-blue-800 text-lg"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/mdshahedul.islam.391420" target="_blank" class="mx-2 text-blue-500 hover:text-blue-700 text-lg"><i class="fab fa-facebook"></i></a>
+    </div>
+    © 2025 Md Shahedul Islam Sarker. All rights reserved.
+  </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 70,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
